@@ -48,4 +48,17 @@ class OrdersController extends Controller
     	session()->flash('success', 'Order paid status changed ..!');
     	return back();
     }
+
+    public function delete($id){
+        $order = Order::find($id);
+        if(!is_null($order)){
+            // $districts = District::where('division_id', $division->id)->get();
+            // foreach($districts as $district){
+            //     $district->delete();
+            // }
+            $order->delete();
+        }
+        session()->flash('success', 'Order has deleted successfully!! ');
+        return back();
+    }
 }
