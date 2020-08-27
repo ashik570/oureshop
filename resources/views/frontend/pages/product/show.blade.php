@@ -32,7 +32,7 @@
 			  </a>
 			</div>
 			 <div class="mt-3">
-			 	<p>Category <span class="badge badge-info">{{ $product->category->name }}</span></p>
+			 	<!-- <p>Category <span class="badge badge-info">{{ $product->category->name }}</span></p> -->
 			 	<p>Brand <span class="badge badge-info">{{ $product->brand->name }}</span></p>
 			 </div>
 		</div>
